@@ -1,4 +1,123 @@
-body {
-    background-color: #222;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nav-buttons i {
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: white !important;
+}
+
+nav {
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    background-color: red;
+
+}
+
+#nav-adobe-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo-name {
+    color: red;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+.nav-first-layer {
+
+    height: 70%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-bottom: 0.1px solid #ddd;
+
+}
+
+.nav-first-layer > div {
+    width: 75vw !important;
+    display: flex;
+    margin: 0 230px;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.nav-verticle-separator {
+    height: 7vh;
+    background-color: black;
+    border-left: 0.1px solid #666;
+    transform: scaleX(0.2);
+}
+
+.nav-options ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+}
+
+.nav-buttons {
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-buttons div:nth-child(2) {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-creativity-and-design i, .nav-options i {
+    font-size: 12px;
+}
+
+.nav-second-layer {
+    height: 30%;
+}
+
+.nav-buttons button {
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.nav-buttons button:first-child {
+    background-color:#1473e6 !important;
     color: white;
+    border: none;
+
+}
+
+.nav-buttons button:last-child {
+    color: black;
+    border: 2px solid #ccc;
+
+}
+
+@media screen and (max-width: 1500px) {
+    .nav-first-layer > div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .nav-first-layer {
+        justify-content: center;
+    }
 }
